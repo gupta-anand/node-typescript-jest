@@ -1,0 +1,40 @@
+{
+  "name": "node-typescript-jest",
+  "version": "0.0.1",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 6.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "~15.1.32",
+    "@types/node": "~6.0.46",
+    "jest": "~16.0.2",
+    "rimraf": "~2.5.4",
+    "tslint": "~3.15.1",
+    "tslint-microsoft-contrib": "~2.0.13",
+    "typescript": "~2.0.6"
+  },
+  "scripts": {
+    "clean": "rimraf coverage build tmp",
+    "build": "tsc -p tsconfig.release.json",
+    "watch": "tsc -w -p tsconfig.release.json",
+    "lint": "tslint -t stylish '{src,test}/**/*.{ts}'",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "scriptPreprocessor": "<rootDir>/preprocessor.js",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "testRegex": "<rootDir>(test/).*\\.(test|spec)\\.(ts|js)$",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx,js,jsx}"
+    ]
+  }
+}
