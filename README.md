@@ -1,8 +1,7 @@
-+ [TypeScript][typescript] to ES6 transpilation,
-+ [TSLint][tslint] with a general recommendation for a good default configuration, 
-+ [Jest][jest] unit testing and coverage,
++ TypeScript to ES6 transpilation,
++ TSLint with a general recommendation for a good default configuration,
++ Jest unit testing and coverage,
 + Type definitions for Node.js and Jest,
-+ [NPM scripts for common operations](#available-scripts),
 + .editorconfig for consistent file format.
 
 ## Quick start
