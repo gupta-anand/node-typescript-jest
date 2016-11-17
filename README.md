@@ -6,10 +6,10 @@
 
 ## Quick start
 
-This project requires [Node.js][nodejs] 6.2+ and [NPM][npm]. Make sure you have those installed. Then just type following commands:
+This project requires Node.js 6.2+ and NPM. Make sure you have those installed. Then just type following commands:
 
 ```
-git clone https://github.com/
+git clone https://github.com/gupta-anand/node-typescript-jest.git
 cd node-typescript-jest
 npm install
 ```
